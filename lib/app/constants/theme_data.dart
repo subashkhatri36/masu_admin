@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:masu_mart/app/constants/constants.dart';
+import 'package:masu_admin/app/constants/constants.dart';
 
 class Themes {
   static Color backgroudColor = HexColor('#fe3839');
