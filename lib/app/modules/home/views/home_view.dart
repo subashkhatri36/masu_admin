@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:masu_admin/app/utils/string_utils.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -13,9 +14,17 @@ class HomeView extends GetView<HomeController> {
         centerTitle: true,
       ),
       body: Center(
-        child: Text(
-          'HomeView is working',
-          style: TextStyle(fontSize: 20),
+        child: Container(
+          width: 80,
+          height: 35,
+          child: Text(
+            appName,
+            style: Theme.of(context)
+                .textTheme
+                .headline4
+                .copyWith(fontWeight: FontWeight.normal),
+            textAlign: TextAlign.center,
+          ),
         ),
       ),
     );
